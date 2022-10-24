@@ -1,0 +1,22 @@
+<div class="body">
+<h1 align="center"><font color="brown">Furniture Indoor</font></h1>
+ <div class="thefilter"><app-filter [all]="getalltypes()"
+              [bed]="getbed()"
+              [sofa]="getsofa()"
+              [table]="gettable()"[chair]="getchair()"[desk]="getdesk()"
+              [chairdesk]="getchairdesk()"
+               (radiobtnchange)="onfilterradiobtnchange($event)"></app-filter>
+  </div>
+<ng-container *ngFor=" let fi of indoorfurniture">
+  <div class="imgcontainer" *ngIf="selection==='all'|| selection===fi.type" >
+    <img src="assets/{{fi.img}}" />
+    <div class="imgcmts">
+      <h3 class="titleimg">{{fi.title}} </h3>
+      <b>items: <span class="items">{{fi.items}}</span></b>
+      <b>price : <span class="price" [ngStyle]="{color:fi.stat==='above'?'red':'green'}">{{fi.price}}</span></b><br />
+  <b>color: <span class="color">{{fi.color}}</span></b><b>type: <span class="type">{{fi.type}}</span></b>
+  <p> {{fi.details}}</p><br />
+    </div>
+  </div>
+</ng-container>
+  </div>

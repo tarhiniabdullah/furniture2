@@ -1,0 +1,14 @@
+.filter input {
+  margin: 10px 10px;
+}
+input[type="radio"]{
+    accent-color:green;
+}
+
+.filter {
+  
+  background-color: darkorange;
+  border: 1px solid black;
+  width: 600px;
+  height: auto;
+}

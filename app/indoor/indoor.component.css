@@ -1,0 +1,53 @@
+.imgcontainer {
+  width: 300px;
+  height: 500px;
+  background-color:burlywood;
+  margin: 20px 15px;
+  border: 1px solid black;
+  float: left;
+}
+  .imgcontainer:hover {
+    transform: scale(1.1);
+    transition: 1s linear;
+  }
+.body {
+  background-color: lightgoldenrodyellow;
+  height: 3000px;
+}
+  .imgcontainer img {
+    width: 260px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 16px 16px;
+  }
+  .thefilter{
+      margin-left:400px;
+  }
+h3 {
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  h3::selection {
+    color: red;
+    background-color:lightcoral;
+    font-weight: 900;
+  }
+
+.price {
+  color: brown;
+  font-weight: 900;
+}
+
+.imgcontainer b, a, p {
+  margin-left: 10px;
+}
+
+.click {
+  position: absolute;
+}
+
+.imgcmts {
+  border-top: 2px solid black;
+}
